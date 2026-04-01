@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiko Uchidate | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+
+<body class="bg-[#FCFBF9] text-[#4A4A4A] fade-in font-light">
+
+    <header
+        class="py-8 px-10 flex justify-between items-center sticky top-0 bg-[#FCFBF9]/90 backdrop-blur-sm z-50 border-b border-[#F0EBE6]">
+        <div class="flex items-center gap-4">
+            <img src="icon.png" alt="M. Uchidate"
+                class="w-10 h-10 rounded-full border border-[#E5DDD5] shadow-sm object-cover bg-white opacity-80 grayscale-[50%]">
+            <h1 class="text-lg md:text-xl tracking-widest text-[#333333]">M. Uchidate</h1>
+        </div>
+        <p class="text-xs text-gray-400 tracking-widest hidden md:block">Web Engineer Portfolio</p>
+    </header>
+
+    <section class="max-w-4xl mx-auto mt-32 md:mt-48 text-center px-4">
+        <h2 class="text-3xl md:text-5xl leading-loose md:leading-relaxed tracking-widest text-[#333333] font-normal">
+            調達・購買の非効率を、<br>
+            構造から解決する。
+        </h2>
+        <p class="mt-10 text-sm md:text-base text-gray-500 tracking-widest leading-loose">
+            現場起点で、業務を変えるシステムを設計・開発します。
+        </p>
+        <div class="mt-16 w-10 h-[2px] bg-[#8C7A6B] mx-auto"></div>
+    </section>
+
+    <section id="about" class="max-w-3xl mx-auto mt-32 md:mt-48 px-4 text-center">
+        <p class="text-sm md:text-base text-[#4A4A4A] leading-loose md:leading-loose tracking-widest">
+            製造業の調達・購買領域で10年間、実務とマネジメントを経験。<br class="hidden md:block">
+            現場で感じていた非効率を、自ら解決できるエンジニアになるため開発を学びました。
+        </p>
+        <p class="mt-8 text-sm md:text-base text-gray-500 leading-loose md:leading-loose tracking-widest">
+            業務フローを理解した上での設計と、<br class="hidden md:block">
+            実運用を前提とした堅牢なバックエンド構築を強みとしています。
+        </p>
+        <p class="mt-10 text-xs md:text-sm text-[#8C7A6B] tracking-widest">
+            現場で感じた違和感が、開発の原点です。
+        </p>
+    </section>
+
+    <section id="skills"
+        class="max-w-3xl mx-auto mt-24 md:mt-32 px-4 text-center border-t border-[#E5DDD5] pt-24 md:pt-32">
+        <p class="text-xs text-gray-400 tracking-[0.2em] uppercase mb-8">Skills</p>
+        <p class="text-sm md:text-base text-[#4A4A4A] tracking-widest leading-loose">
+            PHP / Laravel / MySQL / Tailwind CSS / API Integration / Heroku
+        </p>
+    </section>
+
+    <section id="works" class="max-w-4xl mx-auto mt-32 md:mt-48 px-4 pb-20 border-t border-[#E5DDD5] pt-24 md:pt-32">
+        <p class="text-xs text-gray-400 tracking-[0.2em] text-center mb-20 uppercase">Works</p>
+
+        <div class="space-y-32 md:space-y-40">
+
+            <div class="text-center">
+                <img src="scm.png" alt="SCM Insight Dashboard"
+                    class="w-full max-w-2xl mx-auto rounded-2xl shadow-md border border-[#F0EBE6] mb-12 hover:opacity-95 transition duration-500">
+
+                <h4 class="text-3xl md:text-4xl tracking-wider text-[#333333] mb-4">SCM Insight</h4>
+                <p class="text-xs md:text-sm text-[#8C7A6B] tracking-widest mb-10">調達・購買実績ダッシュボード</p>
+
+                <div
+                    class="max-w-xl mx-auto text-left bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-[#F0EBE6] mb-12">
+                    <p class="text-xs md:text-sm text-gray-400 tracking-widest mb-4 border-b border-[#F0EBE6] pb-2">
+                        <span class="font-bold text-[#8C7A6B] mr-2">課題</span>月末の手作業集計により、業務負担とミスが発生
+                    </p>
+                    <p class="text-sm md:text-base text-[#4A4A4A] mb-6 leading-relaxed md:leading-loose tracking-wide">
+                        <span class="font-bold text-[#8C7A6B] mr-2 block mb-1">解決策</span>
+                        検収ステータスを軸にした集計ロジックを設計し、ダッシュボードでリアルタイム可視化を実現。
+                    </p>
+                    <p class="text-xs md:text-sm text-gray-500 tracking-widest bg-[#FCFBF9] p-4 rounded text-center">
+                        <span class="font-bold text-[#8C7A6B] mr-2">結果</span>月次集計作業の工数削減と、データ可視化による迅速な意思決定を実現
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 items-center">
+                    <a href="https://scm-insight-788442820d6d.herokuapp.com/login" target="_blank"
+                        class="group flex flex-col items-center hover:opacity-70 transition">
+                        <span
+                            class="text-sm md:text-base text-[#333333] tracking-widest border-b border-[#333333] pb-1 mb-2">Live
+                            Demo</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider">実際の動作を見る</span>
+                    </a>
+                    <a href="https://github.com/uchidate-dev/scm-insight" target="_blank"
+                        class="group flex flex-col items-center hover:opacity-70 transition">
+                        <span
+                            class="text-sm md:text-base text-gray-400 tracking-widest border-b border-transparent group-hover:border-[#8C7A6B] group-hover:text-[#8C7A6B] pb-1 mb-2">GitHub</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider">設計・実装を見る</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-24 border-t border-[#F0EBE6] pt-24 md:pt-32">
+
+                <div class="text-center flex flex-col h-full">
+                    <div class="h-64 md:h-80 flex items-center justify-center mb-8">
+                        <img src="beauty.png" alt="Beauty System Welcome Screen"
+                            class="max-h-full max-w-full rounded-2xl shadow-sm border border-[#F0EBE6] hover:opacity-95 transition duration-500 object-contain">
+                    </div>
+
+                    <h4 class="text-xl md:text-2xl tracking-wider text-[#333333] mb-3">Beauty System</h4>
+                    <p class="text-[10px] md:text-xs text-[#8C7A6B] tracking-widest mb-6">サロン向け予約管理</p>
+                    <p class="text-xs md:text-sm text-gray-500 mb-10 leading-relaxed md:leading-loose tracking-wide">
+                        洗練されたUIデザインと、<br>厳格なキャンセル制御ロジックを両立。
+                    </p>
+                    <div class="mt-auto flex justify-center space-x-8">
+                        <a href="https://beauty-salon-system-5e46f31a3e68.herokuapp.com" target="_blank"
+                            class="text-xs md:text-sm text-[#333333] tracking-widest hover:text-[#8C7A6B] transition border-b border-[#333333] pb-1">Live
+                            Demo</a>
+                        <a href="https://github.com/uchidate-dev/beauty_system" target="_blank"
+                            class="text-xs md:text-sm text-gray-400 tracking-widest hover:text-[#8C7A6B] transition border-b border-transparent hover:border-[#8C7A6B] pb-1">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="text-center flex flex-col h-full">
+                    <div class="h-64 md:h-80 flex items-center justify-center mb-8">
+                        <img src="recipe.png" alt="My Kitchen Stock Recipe Detail"
+                            class="max-h-full max-w-full rounded-2xl shadow-sm border border-[#F0EBE6] hover:opacity-95 transition duration-500 object-contain">
+                    </div>
+
+                    <h4 class="text-xl md:text-2xl tracking-wider text-[#333333] mb-3">My Kitchen Stock</h4>
+                    <p class="text-[10px] md:text-xs text-[#8C7A6B] tracking-widest mb-6">AI献立提案 兼 在庫管理</p>
+                    <p class="text-xs md:text-sm text-gray-500 mb-10 leading-relaxed md:leading-loose tracking-wide">
+                        Gemini APIと連携し、<br>実運用に耐えうる食材在庫管理を実現。
+                    </p>
+                    <div class="mt-auto flex justify-center space-x-8">
+                        <a href="https://my-kitchen-stock-34bacb1e59da.herokuapp.com/login" target="_blank"
+                            class="text-xs md:text-sm text-[#333333] tracking-widest hover:text-[#8C7A6B] transition border-b border-[#333333] pb-1">Live
+                            Demo</a>
+                        <a href="https://github.com/uchidate-dev/food-manage" target="_blank"
+                            class="text-xs md:text-sm text-gray-400 tracking-widest hover:text-[#8C7A6B] transition border-b border-transparent hover:border-[#8C7A6B] pb-1">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center mt-32 pb-32 border-t border-[#F0EBE6] pt-24 px-4">
+        <p class="text-sm text-gray-500 leading-loose tracking-widest">
+            現場課題を本質から解決する開発に携わりたいと考えています。<br>
+            お気軽にご連絡いただけますと幸いです。
+        </p>
+        <p class="mt-8 text-xs text-gray-400 tracking-widest">© 2026 M. Uchidate</p>
+    </section>
+
+</body>
+
+</html>
