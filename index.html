@@ -8,6 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Noto Serif JP', serif;
         }
@@ -34,13 +38,23 @@
 <body class="bg-[#FCFBF9] text-[#4A4A4A] fade-in font-light">
 
     <header
-        class="py-8 px-10 flex justify-between items-center sticky top-0 bg-[#FCFBF9]/90 backdrop-blur-sm z-50 border-b border-[#F0EBE6]">
-        <div class="flex items-center gap-4">
+        class="py-5 md:py-8 px-6 md:px-10 flex justify-between items-center sticky top-0 bg-[#FCFBF9]/90 backdrop-blur-sm z-50 border-b border-[#F0EBE6]">
+
+        <div class="flex items-center gap-3 md:gap-4">
             <img src="icon.png" alt="M. Uchidate"
-                class="w-10 h-10 rounded-full border border-[#E5DDD5] shadow-sm object-cover bg-white opacity-80 grayscale-[50%]">
-            <h1 class="text-lg md:text-xl tracking-widest text-[#333333]">M. Uchidate</h1>
+                class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-[#E5DDD5] shadow-sm object-cover bg-white opacity-80 grayscale-[50%]">
+            <h1 class="text-base md:text-xl tracking-widest text-[#333333]">M. Uchidate</h1>
         </div>
-        <p class="text-xs text-gray-400 tracking-widest hidden md:block">Web Engineer Portfolio</p>
+
+        <nav class="flex gap-4 md:gap-8 mt-1">
+            <a href="#about"
+                class="text-[10px] md:text-xs text-gray-400 tracking-widest hover:text-[#8C7A6B] transition uppercase">About</a>
+            <a href="#skills"
+                class="text-[10px] md:text-xs text-gray-400 tracking-widest hover:text-[#8C7A6B] transition uppercase">Skills</a>
+            <a href="#works"
+                class="text-[10px] md:text-xs text-gray-400 tracking-widest hover:text-[#8C7A6B] transition uppercase">Works</a>
+        </nav>
+
     </header>
 
     <section class="max-w-4xl mx-auto mt-28 md:mt-40 text-center px-4">
